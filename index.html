@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Search input -->
+        <div class="form">
+            <form>
+                <input type="text" class="form-control" id="search" placeholder="Search giphy">
+                <button class="btn btn-primary" id="submit-button">Search</button>
+                <button class="btn btn-primary" id="clear-results">Clear</button>
+            </form>
+        </div>
+        <!-- Add the recent search as a button -->
+        <div class="recent-search"></div>
+        <!-- Favorite Checkbox -->
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="favorite-only">
+            <label class="form-check-label" for="exampleCheck1">Favorite Only</label>
+        </div>
+        <!-- Dump all the giphy here -->
+        <div class="giphy-content"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/logic.js"></script>
+</body>
+</html>
